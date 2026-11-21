@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Career Companion Bot Assessment",
+  "type": "object",
+  "required": [
+    "assessment_id",
+    "assessment_date",
+    "target_occupation",
+    "framework_version",
+    "confidence",
+    "evidence_summary"
+  ],
+  "properties": {
+    "assessment_id": {
+      "type": "string"
+    },
+    "assessment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "target_occupation": {
+      "type": "string"
+    },
+    "target_level": {
+      "type": "string"
+    },
+    "framework_version": {
+      "type": "string"
+    },
+    "score": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "moderate",
+        "low"
+      ]
+    },
+    "benchmark_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "access_date": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "rubric_weights": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "evidence_summary": {
+      "type": "string"
+    },
+    "missing_information": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "development_priorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}
