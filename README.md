@@ -1,36 +1,43 @@
 # Career Companion Bot
 
-Hello! 👋 This is Career Companion Bot, an evolving AI career development assistant created by **Ebuka Nzewi at VEKTA IT**.
+👋 Hello! This is Career Companion Bot, an evolving AI career assistant created by **Ebuka Nzewi at VEKTA IT**.
 
 Official website: https://careercompanionbot.com
-Technical assistance: info@vektait.com
 
-Career Companion Bot discovers and preserves professional experience, compares documented skills with credible occupational benchmarks, and supports realistic professional development, resumes, and job applications.
+Technical support: info@vektait.com
 
-## Start
+Career Companion Bot helps people discover their real abilities, assess career readiness against credible benchmarks, develop skills, preserve achievements, and prepare factual job applications.
 
-Copy the text from `STARTER_PROMPT.txt` into an AI assistant that can access public GitHub content. The assistant should read `START_HERE.md` from this repository and follow the official framework. If the assistant cannot retrieve GitHub content, it must say so and ask for the official files rather than inventing them.
+## Start with one sentence
 
-For returning users, the assistant also needs authorized access to the individual's **private GitHub repository**. Do not upload personal data to this public repository.
+Paste this into an AI assistant that can read public GitHub files:
 
-## Core principle
+> Initiate Career Companion Bot from https://github.com/Seempleman/career-companion-bot and read START_HERE.md.
 
-VEKTA IT controls the official framework. Users control their personal career intelligence. Neither should depend entirely on the other to remain useful.
+That is the full starter prompt. START_HERE.md explains the system, asks whether you wish to activate it, and only after your agreement guides the AI to load the complete instructions.
 
-## Repository roles
+Next, the assistant asks whether you already have your own private GitHub repository with Career Companion Bot. Existing users can load their personal assistant. New users begin a short, adaptive career discovery. People with a recovery archive can restore their previous progress.
 
-This public repository contains universal instructions, schemas, starter materials, and official releases. A user's private repository holds their personal career records, assessments, and a pinned copy of the framework. This public repository is not an account database.
+Reading Markdown does not run software. AI systems may ask for consent before applying external instructions or connecting to GitHub. If the assistant cannot read the repository, it should tell you rather than invent official instructions.
 
-## Release trust
+## How the system works
 
-Use the release metadata in `RELEASE_MANIFEST.json`. It records file hashes for integrity checking. Hashes alone do not prove the publisher's identity. Official release authenticity requires independently trusted repository identity and verified signed release provenance where supported. Never claim cryptographic verification unless a capable tool has performed it.
+VEKTA IT maintains this public framework. You own a separate private repository containing your personal career records, assessment history, preferences, and a pinned framework copy. No personal profiles belong in this public repository.
 
-## Privacy and governance
+Initial discovery aims for 10 minutes or less. Users can proceed when sufficient evidence is collected, or add more experience. The assessment evaluates career readiness, not merely resume quality.
 
-The user's repository must be private before any personal information is uploaded. User approval is required before a pull request containing a career update or framework upgrade is merged. Do not put API tokens, passwords, private client information, or employer secrets into the repository. A private repository is not an excuse to store confidential business material.
+**VEKTA IT controls the official framework. Users control their personal career intelligence. Neither depends entirely on the other to remain useful.**
 
-This project is publicly readable. That does not mean copied or modified assistants are endorsed by VEKTA IT. Only releases published by authorized maintainers of the designated official repository should be described as official.
+## Security and updates
+
+Always keep personal career repositories private. Do not store passwords, access tokens, identification scans, unauthorized client information, or confidential employer records. Updates to personal career data or installed framework files require a user-approved pull request.
+
+RELEASE_MANIFEST.json lists file hashes and current release status. Hashes alone do not prove publisher identity. Do not claim a cryptographically signed release was verified unless a suitable tool has performed verification.
+
+## Assistance
+
+For help creating a private repository, recovering your career profile, or upgrading Career Companion Bot, contact info@vektait.com.
 
 ## License
 
-A license has not been selected yet. Public readability alone does not grant a broad copyright license to reuse or redistribute content. VEKTA IT should select a license before general public promotion.
+No redistribution license has been selected yet. Public readability does not automatically grant reuse or redistribution rights.
