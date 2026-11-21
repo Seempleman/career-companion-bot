@@ -1,0 +1,33 @@
+{
+  "product": "Career Companion Bot",
+  "version": "1.0.0",
+  "release_status": "candidate_not_published",
+  "official_repository": "https://github.com/Seempleman/career-companion-bot",
+  "website": "https://careercompanionbot.com",
+  "publisher": "Ebuka Nzewi at VEKTA IT",
+  "published_at": null,
+  "source_commit": null,
+  "signature_verified": false,
+  "schema_version": 1,
+  "required_entrypoint": "START_HERE.md",
+  "files": {
+    ".github/workflows/validate.yml": "58d881d7de215ca7bc7221dcb0c16d58eeb62d61f91ea0558d9c558491baa3f0",
+    "ASSESSMENT_ENGINE.md": "093929995f3d9a91bcaf129e87f16fb0838bd4aa3a568bdaef0ef7c05767158b",
+    "BUILDER_INSTRUCTIONS.md": "aec3ce6adcf155e7d79b5866d1fb789f4d93b769966d6e972d2f57f6be1bddd1",
+    "CAREER_OS_INSTRUCTIONS.md": "8ef97e60b2101cfac36ff80595d9b09ce332ba9b6f6e43d4d8bee17fe7478024",
+    "CHANGELOG.md": "81c13bd7aeec924990dc6f16de76a9260d91056970e690347d46e79bdab4f6ae",
+    "README.md": "95539ea37be0b54eeba19bee0a339badd92408971af3e5afd7dcb4baf9e56b41",
+    "REPOSITORY_SETUP.md": "9b8bc5730c3ffa2a54e83d2736725a337651723a522ec3a2e37af7fc1f60e585",
+    "STARTER_PROMPT.txt": "3330168a1231324929a6d696cc70415cab8f9e553eb7f855642d446f204bccb8",
+    "START_HERE.md": "85d9ff2eeac715edb07d94a2c2f4e802b57ed0d98acf3947b86274fa7cc6d737",
+    "UPDATE_PROTOCOL.md": "0794a86744057bb2c84e9ed8f34fac86676ee1e50caa2a2d7ad1c038553dc55f",
+    "schemas/assessment.schema.json": "4f7350e85d255cf484155a3fc303293d097a2c3f6c83fd21f4c77a97d16b4b7d",
+    "schemas/framework_version.schema.json": "636bde8feefbac369d49e7ef1b0260beca5d6f6a8a04a98bebaf6940993ab6ef",
+    "templates/CAREER_KNOWLEDGE_BASE_TEMPLATE.md": "e7fea23becab901b60d9b82941ab43d5147f5a1b9fe64cb39e5bd3bc19bdf6b9",
+    "templates/CAREER_PROFILE_TEMPLATE.md": "3bd75c91e57c342a07733056cba4695db12540d68e09e51760e58879b2c59b4e",
+    "templates/DEVELOPMENT_ROADMAP_TEMPLATE.md": "6e5b4cc5ad1be35d59455510c5507dc36d78af28a7b7c368dae33b8e5c5b6a8a",
+    "templates/PRIVATE_LAUNCHER_TEMPLATE.txt": "1d30746f1984dadca5afbf0a5cb4f4bc2cd69ba7615cb24b504b95c5fbd5b5e4",
+    "templates/PRIVATE_REPOSITORY_README_TEMPLATE.md": "dbde1922091da5c7b96f649e6ae8c0191b206b7e63367c2e1bb48989b7d4f102",
+    "templates/SKILL_EVIDENCE_TEMPLATE.md": "ace63303a2636e489cb3ee06b1ffd3c3a8d109516e17d2f83acdd876c0e68e26"
+  }
+}
