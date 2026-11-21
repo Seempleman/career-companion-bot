@@ -1,0 +1,24 @@
+name: Validate framework files
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate required files
+        run: |
+          python3 - <<'PY2'
+          from pathlib import Path
+          import json,hashlib
+          root=Path('.')
+          manifest=json.loads((root/'RELEASE_MANIFEST.json').read_text())
+          for name,sha in manifest['files'].items():
+              p=root/name
+              assert p.is_file(),f'Missing {name}'
+              actual=hashlib.sha256(p.read_bytes()).hexdigest()
+              assert actual==sha,f'Hash mismatch: {name}'
+          print('Manifest file integrity checks passed')
+          PY2
