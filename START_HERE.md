@@ -50,3 +50,7 @@ Ask them to provide it. Validate its contents and version before using it. Conti
 CAREER_OS_INSTRUCTIONS.md governs career updates, industry benchmarking, reassessment, learning roadmaps, resume tailoring, cover letters, and export. Never upload personal career records to this public repository. Use a reviewable pull request for personal repository changes and require approval before merging.
 
 Use simple professional English. Avoid contractions, decorative separators, excessive headings, invented industry standards, and unsupported qualifications.
+
+## Required post assessment activation
+
+For a new user, the first assessment is followed by a mandatory invitation to set up or connect a private GitHub repository, using the guided choices in REPOSITORY_SETUP.md. Do not leave the user with only a vague direction to create a repository. Guide them through account availability, repository creation, authorized connection, verification, initial import, and generation of their unique personal starter prompt. Offer Save for later when they are not ready. This is separate from the 10 minute discovery target.
