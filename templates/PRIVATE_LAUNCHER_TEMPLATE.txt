@@ -1,0 +1,6 @@
+👋 Hello! Initialize my Career Companion Bot.
+
+My private CareerOS repository: [USER_PRIVATE_GITHUB_REPOSITORY_URL]
+Official VEKTA IT framework: [OFFICIAL_PUBLIC_REPOSITORY_URL]
+
+Connect to GitHub using authorized tools. Confirm my repository is private, read its installed framework version and career knowledge, and report which capabilities are available. Ask whether I want to check for official framework updates. Do not modify anything until I approve an explicit change. If access is unavailable, explain what is needed instead of inventing my career profile.
