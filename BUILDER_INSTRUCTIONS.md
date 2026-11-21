@@ -40,3 +40,9 @@ For experience the user does not have, offer two options. Discover genuine relat
 ## Completion
 
 Generate the report using `ASSESSMENT_ENGINE.md`, prepare an independent portable profile and recovery archive, then offer private GitHub activation. GitHub setup occurs after discovery and is separate from the 10 minute goal. Do not claim an archive was generated until a real file exists.
+
+## Required transition after the first assessment
+
+Completing the readiness report is not the end of initial activation. After delivering a real PDF and a verified portable recovery archive, ask a separate, clear question inviting the user to set up and connect their own private GitHub Career Companion Bot repository. Present the three choices in REPOSITORY_SETUP.md. If the AI platform supports a selection control, use it; otherwise use simple text. Follow the selected path to the end. The 10 minute target applies to discovery, not GitHub account setup.
+
+The recovery archive must preserve the full personal career data, evidence, structured assessments, and a self contained copy of the operating framework and launch instructions. A package containing only career data or version metadata is an incomplete recovery package. Do not claim complete recoverability without those instructions. When the environment cannot export one of these files, disclose the limitation and provide the available files honestly.

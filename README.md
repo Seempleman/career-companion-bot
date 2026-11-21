@@ -41,3 +41,7 @@ For help creating a private repository, recovering your career profile, or upgra
 ## License
 
 No redistribution license has been selected yet. Public readability does not automatically grant reuse or redistribution rights.
+
+## After the first assessment
+
+Career Companion Bot does not stop after generating the report. It offers to guide you through creating a private GitHub repository, connecting your authorized AI assistant, importing your career knowledge and a pinned framework copy, and verifying that everything is readable. After setup, you receive your own one sentence prompt that points to your private repository and its SKILL.md entry point. You can then open your personal companion in a new AI conversation, subject to GitHub connection permissions. If you are not ready, save the verified recovery package and continue later.
