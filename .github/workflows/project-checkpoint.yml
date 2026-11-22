@@ -1,0 +1,59 @@
+name: Publish project checkpoint
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: career-companion-checkpoint
+  cancel-in-progress: false
+
+jobs:
+  checkpoint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out current main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 30
+          persist-credentials: true
+
+      - name: Build checkpoint files
+        run: |
+          mkdir -p "$RUNNER_TEMP/career-companion-checkpoint"
+          python3 .github/scripts/build_checkpoint.py "$RUNNER_TEMP/career-companion-checkpoint"
+
+      - name: Publish checkpoint branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          if [ "$(git rev-parse origin/main)" != "$GITHUB_SHA" ]; then
+            echo "A newer main commit is available; skip publishing this stale checkpoint."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin project-checkpoints > /dev/null; then
+            git fetch origin project-checkpoints
+            git checkout -B project-checkpoints FETCH_HEAD
+          else
+            git checkout --orphan project-checkpoints
+            git rm -rf . > /dev/null
+          fi
+
+          cp "$RUNNER_TEMP/career-companion-checkpoint/PROJECT_CHECKPOINT.md" PROJECT_CHECKPOINT.md
+          cp "$RUNNER_TEMP/career-companion-checkpoint/PROJECT_CHECKPOINT.json" PROJECT_CHECKPOINT.json
+          git add PROJECT_CHECKPOINT.md PROJECT_CHECKPOINT.json
+          if git diff --cached --quiet; then
+            echo "Checkpoint already current"
+          else
+            git commit -m "Record framework checkpoint for ${GITHUB_SHA:0:12}"
+            git push origin HEAD:project-checkpoints
+          fi

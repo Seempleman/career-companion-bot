@@ -15,3 +15,7 @@ Initial public Career Companion Bot framework created by Ebuka Nzewi at VEKTA IT
 ## Unreleased: guided personal activation
 
 After the first readiness assessment, require a clear choice to begin private GitHub setup, connect an existing repository, or save for later. Add detailed guided creation and connection instructions, a self contained personal SKILL.md template, a unique private repository launcher, and recovery completeness requirements. These changes are proposed until the corresponding pull request is approved and merged.
+
+## Unreleased: automatic maintainer checkpoints
+
+Added a separate maintainer startup prompt and a human maintained product state document. Added a GitHub Actions workflow that publishes a source commit linked project checkpoint to the project-checkpoints branch whenever main is updated. This does not change the public user starter or their private career repositories. The automation must be confirmed after this pull request is merged.
