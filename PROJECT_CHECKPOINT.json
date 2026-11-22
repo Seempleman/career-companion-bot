@@ -1,0 +1,85 @@
+{
+  "product": "Career Companion Bot",
+  "checkpoint_schema_version": 1,
+  "created_at_utc": "2026-11-22T00:41:41+00:00",
+  "official_repository": "https://github.com/Seempleman/career-companion-bot",
+  "source_branch": "main",
+  "source_commit": "b1de7983bc50923159f4e4664edf484b1e2f59fd",
+  "framework_version": "1.0.0",
+  "release_status": "candidate_not_published",
+  "manifest_schema_version": 1,
+  "manifest_tracked_files": 23,
+  "repository_file_count": 24,
+  "repository_files": [
+    ".github/scripts/build_checkpoint.py",
+    ".github/workflows/project-checkpoint.yml",
+    ".github/workflows/validate.yml",
+    "ASSESSMENT_ENGINE.md",
+    "BUILDER_INSTRUCTIONS.md",
+    "CAREER_OS_INSTRUCTIONS.md",
+    "CHANGELOG.md",
+    "MAINTAINER_PROMPT.txt",
+    "PROJECT_CONTEXT.md",
+    "README.md",
+    "RELEASE_MANIFEST.json",
+    "REPOSITORY_SETUP.md",
+    "STARTER_PROMPT.txt",
+    "START_HERE.md",
+    "UPDATE_PROTOCOL.md",
+    "schemas/assessment.schema.json",
+    "schemas/framework_version.schema.json",
+    "templates/CAREER_KNOWLEDGE_BASE_TEMPLATE.md",
+    "templates/CAREER_PROFILE_TEMPLATE.md",
+    "templates/DEVELOPMENT_ROADMAP_TEMPLATE.md",
+    "templates/PERSONAL_SKILL_TEMPLATE.md",
+    "templates/PRIVATE_LAUNCHER_TEMPLATE.txt",
+    "templates/PRIVATE_REPOSITORY_README_TEMPLATE.md",
+    "templates/SKILL_EVIDENCE_TEMPLATE.md"
+  ],
+  "recent_commits": [
+    {
+      "sha": "b1de798",
+      "subject": "Merge pull request #3 from Seempleman/feature/automatic-maintainer-checkpoints"
+    },
+    {
+      "sha": "2cbea2a",
+      "subject": "Track checkpoint files and refresh release manifest hashes"
+    },
+    {
+      "sha": "e4a1e72",
+      "subject": "Prevent older workflows from overwriting newer checkpoints"
+    },
+    {
+      "sha": "8022fcf",
+      "subject": "Document maintainer checkpoint and handoff workflow"
+    },
+    {
+      "sha": "dc1fa4c",
+      "subject": "Document maintainer checkpoint and handoff workflow"
+    },
+    {
+      "sha": "92e5300",
+      "subject": "Add maintainer checkpoint automation and state context"
+    },
+    {
+      "sha": "8fb7f82",
+      "subject": "Add maintainer checkpoint automation and state context"
+    },
+    {
+      "sha": "3c57235",
+      "subject": "Add maintainer checkpoint automation and state context"
+    },
+    {
+      "sha": "795d0b2",
+      "subject": "Add maintainer checkpoint automation and state context"
+    },
+    {
+      "sha": "ddf61a9",
+      "subject": "Merge pull request #2 from Seempleman/feature/guided-private-repo-activation"
+    }
+  ],
+  "project_context_file": "PROJECT_CONTEXT.md",
+  "entrypoint_file": "START_HERE.md",
+  "maintainer_prompt_file": "MAINTAINER_PROMPT.txt",
+  "source_tree_url": "https://github.com/Seempleman/career-companion-bot/tree/b1de7983bc50923159f4e4664edf484b1e2f59fd"
+}
