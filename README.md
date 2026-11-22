@@ -45,3 +45,11 @@ No redistribution license has been selected yet. Public readability does not aut
 ## After the first assessment
 
 Career Companion Bot does not stop after generating the report. It offers to guide you through creating a private GitHub repository, connecting your authorized AI assistant, importing your career knowledge and a pinned framework copy, and verifying that everything is readable. After setup, you receive your own one sentence prompt that points to your private repository and its SKILL.md entry point. You can then open your personal companion in a new AI conversation, subject to GitHub connection permissions. If you are not ready, save the verified recovery package and continue later.
+
+## Maintainer checkpoint and development handoff
+
+Career Companion Bot also provides a separate maintainer workflow for its creator. Copy MAINTAINER_PROMPT.txt into a new AI conversation to resume work on the official product without relying on prior chat history. This is not the starter prompt for ordinary Career Companion Bot users.
+
+After each push or approved merge to main, the project checkpoint GitHub Action generates PROJECT_CHECKPOINT.md and PROJECT_CHECKPOINT.json on the separate project-checkpoints branch. These snapshots identify the exact main commit, framework version and release status, recent commits, repository files, current design decisions and outstanding engineering tasks. The maintainer AI must compare the checkpoint source commit to the current main commit before relying on it. If the checkpoint is unavailable or behind main, the assistant must read main directly.
+
+The workflow needs GitHub Actions enabled and permission for github-actions to write repository contents. A checkpoint is a navigation digest and does not replace reading source files. The user facing STARTER_PROMPT.txt and onboarding remain unchanged.
